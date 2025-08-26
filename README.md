@@ -60,7 +60,9 @@ constant ::= integer_const | float_const | char_const
 
 ## Folder Structure
 ├── src/ # Source code
+
 ├── README.md # Project description
+
 ├── LICENSE # License file
 
 ---
