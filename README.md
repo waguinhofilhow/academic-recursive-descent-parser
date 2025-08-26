@@ -80,7 +80,7 @@ cd src
 javac *.java
 
 3. Run the parser:  
-java Main
+java Teste
 
 ## Example
 **Input (`exemplo1.txt`):**
