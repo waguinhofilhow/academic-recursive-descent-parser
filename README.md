@@ -72,14 +72,14 @@ constant ::= integer_const | float_const | char_const
 ---
 
 ## How to Run
-1. Clone the repository:
+1. Clone the repository:  
 git clone https://github.com/waguinhofilhow/academic-recursive-descent-parser.git
 
-2. Compile the Java files:
-cd src
+2. Compile the Java files:  
+cd src  
 javac *.java
 
-3. Run the parser:
+3. Run the parser:  
 java Main
 
 ## Example
