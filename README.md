@@ -19,42 +19,42 @@ The parser analyzes input programs and validates them according to a specified g
 
 program ::= program [decl-list] begin stmt-list end
 
-decl-list ::= decl {decl}
-decl ::= type ":" ident-list ";"
-ident-list ::= identifier {"," identifier}
-type ::= int | float | char
+decl-list ::= decl {decl}  
+decl ::= type ":" ident-list ";"  
+ident-list ::= identifier {"," identifier}  
+type ::= int | float | char  
 
-stmt-list ::= stmt {";" stmt}
+stmt-list ::= stmt {";" stmt}  
 stmt ::= assign-stmt | if-stmt | while-stmt | repeat-stmt | read-stmt | write-stmt
 
 assign-stmt ::= identifier "=" simple_expr
 
-if-stmt ::= if condition then [decl-list] stmt-list end
+if-stmt ::= if condition then [decl-list] stmt-list end  
 | if condition then [decl-list] stmt-list else decl-list stmt-list end
 
 condition ::= expression
 
-repeat-stmt ::= repeat [decl-list] stmt-list stmt-suffix
+repeat-stmt ::= repeat [decl-list] stmt-list stmt-suffix  
 stmt-suffix ::= until condition
 
-while-stmt ::= stmt-prefix [decl-list] stmt-list end
+while-stmt ::= stmt-prefix [decl-list] stmt-list end  
 stmt-prefix ::= while condition do
 
-read-stmt ::= in "(" identifier ")"
-write-stmt ::= out "(" writable ")"
+read-stmt ::= in "(" identifier ")"  
+write-stmt ::= out "(" writable ")"  
 writable ::= simple-expr | literal
 
-expression ::= simple-expr | simple-expr relop simple-expr
-simple-expr ::= term | simple-expr addop term
-term ::= factor-a | term mulop factor-a
-factor-a ::= factor | ! factor | "-" factor
+expression ::= simple-expr | simple-expr relop simple-expr  
+simple-expr ::= term | simple-expr addop term  
+term ::= factor-a | term mulop factor-a  
+factor-a ::= factor | ! factor | "-" factor  
 factor ::= identifier | constant | "(" expression ")"
 
-relop ::= "==" | ">" | ">=" | "<" | "<=" | "!="
-addop ::= "+" | "-" | "||"
+relop ::= "==" | ">" | ">=" | "<" | "<=" | "!="  
+addop ::= "+" | "-" | "||"  
 mulop ::= "*" | "/" | "&&"
 
-constant ::= integer_const | float_const | char_const
+constant ::= integer_const | float_const | char_const  
 
 ---
 
