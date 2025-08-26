@@ -59,10 +59,8 @@ constant ::= integer_const | float_const | char_const
 ---
 
 ## Folder Structure
-├── src/ # Source code
-
-├── README.md # Project description
-
+├── src/ # Source code  
+├── README.md # Project description  
 ├── LICENSE # License file
 
 ---
@@ -114,7 +112,7 @@ Erro semântico: Na linha 16: Tipos incompatíveis em expressão aritmética: fl
 
 ## Author
 
-Wagner Augusto – Bachelor in Computer Engineering (in progress) – CEFET-MG
+Wagner Augusto – Bachelor in Computer Engineering (in progress) – CEFET-MG  
 GitHub: https://github.com/waguinhofilhow
 
 ## License
