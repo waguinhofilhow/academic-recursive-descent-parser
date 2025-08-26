@@ -59,21 +59,21 @@ constant ::= integer_const | float_const | char_const
 ---
 
 ## Folder Structure
-│
-├─ README.md
-├─ LICENSE
-├─ src/
-│  ├─ inputExamples/
-│  │   └─ *.txt          # exemplos de código para testar
-│  ├─ lexical/
-│  │   ├─ Lexer.java
-│  │   ├─ Token.java
-│  │   └─ TokenType.java
-│  ├─ semantic/
-│  │   ├─ Symbol.java
-│  │   └─ SymbolTable.java
-│  ├─ sintatic/
-│  │   └─ Parser.java
+│  
+├─ README.md  
+├─ LICENSE  
+├─ src/  
+│  ├─ inputExamples/  
+│  │   └─ *.txt          # exemplos de código para testar  
+│  ├─ lexical/  
+│  │   ├─ Lexer.java  
+│  │   ├─ Token.java  
+│  │   └─ TokenType.java  
+│  ├─ semantic/  
+│  │   ├─ Symbol.java  
+│  │   └─ SymbolTable.java  
+│  ├─ sintatic/  
+│  │   └─ Parser.java  
 │  └─ Teste.java          # classe main
 
 ---
