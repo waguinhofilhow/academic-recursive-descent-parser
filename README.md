@@ -59,9 +59,22 @@ constant ::= integer_const | float_const | char_const
 ---
 
 ## Folder Structure
-├── src/ # Source code  
-├── README.md # Project description  
-├── LICENSE # License file
+│
+├─ README.md
+├─ LICENSE
+├─ src/
+│  ├─ inputExamples/
+│  │   └─ *.txt          # exemplos de código para testar
+│  ├─ lexical/
+│  │   ├─ Lexer.java
+│  │   ├─ Token.java
+│  │   └─ TokenType.java
+│  ├─ semantic/
+│  │   ├─ Symbol.java
+│  │   └─ SymbolTable.java
+│  ├─ sintatic/
+│  │   └─ Parser.java
+│  └─ Teste.java          # classe main
 
 ---
 
@@ -75,11 +88,13 @@ constant ::= integer_const | float_const | char_const
 1. Clone the repository:  
 git clone https://github.com/waguinhofilhow/academic-recursive-descent-parser.git
 
-2. Compile the Java files:  
+2. Create a folder named "input" and add a file named "input.txt" in it with the code you would like to test
+
+3. Compile the Java files:  
 cd src  
 javac *.java
 
-3. Run the parser:  
+4. Run the parser:  
 java Teste
 
 ## Example
