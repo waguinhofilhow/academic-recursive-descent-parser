@@ -1,0 +1,17 @@
+program
+ int: a,b,c,aux;
+ float: result;
+ char: ch;
+
+begin
+ out("Digite o valor de a:");
+ in (a);
+ out("Digite o valor de c:");
+ in (ch);
+ b = 10;
+ result = (a * ch)/(b*5 - 345.27);
+ aux = ch + 0;
+ out("O resultado e: ");
+ out(result);
+ result = result + aux
+end

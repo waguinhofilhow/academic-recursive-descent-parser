@@ -1,0 +1,25 @@
+%teste de redeclaração de variáveis dentro de um novo escopo e dentro do mesmo escopo
+
+program
+ float: raio, area;
+ char: resp;
+
+begin
+area = 0.0;
+repeat
+ char: resposta;
+ in(raio);
+ if (raio > 0.0) then
+ area = 3 * raio * raio;
+ if (area > 10) then
+ float: raio;           %escopo diferente
+ raio = 2*area;
+ out (raio)
+ end;
+ out (area)
+ end;
+ out ("Deseja continuar?");
+ in (resp)
+until (resp == 'n')
+
+end
